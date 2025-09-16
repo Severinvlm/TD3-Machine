@@ -11,7 +11,7 @@ public class App {
     }
 
     public static String hello() {
-        return "Hello World!";
+        return "Hello terre plate!";
     }
 
     public static String hello(String param) {
