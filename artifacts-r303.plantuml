@@ -1,0 +1,17 @@
+@startuml artifacts-r303
+!include config-min.cfg
+
+class "User Story" as US
+
+Requirement <. US: << concern >>
+US <.. Issue: << sastisfy >>
+Release "1" o-> "*" Issue
+Issue "1" o-> "*" Task
+
+Task <|-- Code
+Task <|-- Test
+Task <|-- Doc
+
+Code <. Test : <<verify>>
+
+@enduml
